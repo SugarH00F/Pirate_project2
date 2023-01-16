@@ -1,5 +1,0 @@
-My first line in project
-<<<<<<< HEAD
-London is the capital of GB
-=======
->>>>>>> parent of fbab67e (Capitals added)

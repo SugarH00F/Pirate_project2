@@ -1,0 +1,1 @@
+gcloud compute instances create reddit-app4 --boot-disk-size=10GB --image=projects/debian-cloud/global/images/debian-11-bullseye-v20221206 --machine-type=g1-small --tags puma-server --restart-on-failure --metadata-from-file startup-script=pustartscript2.sh
