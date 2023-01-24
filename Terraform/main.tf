@@ -38,14 +38,14 @@ resource "google_compute_instance""app"{
     connection {
         type        = "ssh"
         user        = "admin"
-        host        = "${var.hostip}" 
+        host        = "google_compute_instance.this.network_interface.0.access_config.0.nat_ip" 
         agent       = false
-        private_key = "${file("~/.ssh/id_rsa.pub")}"
+        private_key = "${file("~/.ssh/id_rsa")}"
   }
 
 ### SCRIPTS IN TO VM
     provisioner "remote-exec" {
-                script = "${file("C:\\GIT\\Pirate_project2\\Terraform\\test_site.sh")}"
+                script = "test_site.sh"
     }
 
 }
