@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pirate-project-374313",
+  "private_key_id": "b25c01c89bf14dbf427eb5c48526225f22f2a29c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCW4Qtop7i4W0CW\n4Ha+6s6C7nxv00FP1w1cIJzR1fdMi/KcZDP6frjBPvPTFewz/+1Jcdg6XDNBWCfo\nmLwo2ta+oDR8CiFOZGr2MXPOnHAj/ajpxzOIgD3LK1DfT3HBkjmLt9MuZP40wqji\nIVRQQ28Eb7juwlIm34wDLjkpyXDjPMSMYviYyPB84yiXkzWgBVmwU1JgH9QejQ6o\n7yOp3iX/ZbB4fHts/V6gSqsxWyuMqwyYCrEQfEykbud+yRuksnaVcxtxG0s7HDdc\nVo0/kxY7stxF+qQ/x+xkAcfcqLxsViHjrJ4ladurcdX67ol6ncNW8L6q+i0Tfas8\ns8n1A6sZAgMBAAECggEACNQOuZc0yw7F2v4z3Ix7PHSNcfKjy/LqrHUZD/sr3v4C\nWm3Pj8z57Q7MsBGEkm9beFRxwUpzUlPA9A551g8mCR3xLD/gfoiILLMskk6bjjOR\nvmoiRQ6x7vEwKHzqzFeMx/Tf5cNRj49DWAX4u8CSXqlV4hybN3yVofsCq8QGd7lX\nyuVcapBmmaSqzWtAsXdutsIbTg+VIv0qe3TsA9T6mpHPKqsFcMKvZOQ7fBNT6uCZ\nOZTDS8JkMgDx1Gd+7gqL/x4YzLkOpJJPn7LapW7q3n+HHfIyKpTpFX1TzBHaGjKo\nHRgsy+UU81wVCLDtKkg9zt1+Eg8zGhhvZYjnhH2CAQKBgQDIQxij4VRVFyv9gQKo\nDUNYd4FLwtiol3wd70Q2ArJJIcTO3szJSZ//EITpmOowy9E3Rj7+WVbwIOm4i30r\nMffn/0+cWHGKDFGWhfXCbgM8kjB1w9UGYyqueNjvKwI2V6hqXtVy7fY06kDLyaKn\nOJNyX0SnhbDY5gRgbXWOJhzSGQKBgQDA31oZLG14Osn7Ii1Gx03773Lf948WqTWX\npTIy0GDKFjpxLnXklp0qt7O024dk2fNpU5lWY0CI7nUFvMijMKgYjCbwpZ2Hup58\n/N2SvUvv7noqMb/eu2FdmhaE2lRZlVIN2oFKwUxf6WTzgo9nAkao0FTs7zpUtWyC\nNDYJHNLBAQKBgCXkDBV13O78o2Yjssz5NXTXp68d/sBnaSSA0PcnK3SK3yIFJdow\nBAXOqldIh4cUCVHcCK83WCu3DoHMYrJ5kd5jgDykv1bPXeCNGCLhjds4DdM6amP6\n/2hjlSgriw+dJlB6AQjt3VfFutzUGeJp4fwR6nuH4B4p50oXa9apf2qBAoGAFZGk\nwMXwJA7nAZer2ot1VCROA2/q54zaum+18mrNOCxOMtQQSRTy1JEgnqwiMwwQpYm8\nzyVgVS/dlFutUFqjocMio6zRthkPmkio+r0Cnf1cWhWgMGdiFxahSBAmeLIzL+ts\npBCD2wH90SGbqdheUIijxq9mJYz4aoMuO8ymYQECgYAmxAl9wN/zlGfmyJ3b0fIA\nCo4WFI46eRIZpBVq+0d+vub56V5Hr6OtJfem41kgJQXJh0S/3z4ltlcsHJKIvngO\nh92JcMDM1Gpm/OVr7yKBeHFmco64z//s1MqLxQc+ZTe3QSimZmY4B+5WNCAOHc+H\nGoM5w182Z7TAsPWkCOypWw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+  "client_id": "109982199981993569022",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prod-svc%40pirate-project-374313.iam.gserviceaccount.com"
+}
