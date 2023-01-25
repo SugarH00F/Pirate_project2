@@ -1,4 +1,5 @@
 #! /bin/bash
+sudo apt-get update
 sudo rm -rf /var/www/html/index.html
 sudo apt install -y git
 git init /home/admin/
