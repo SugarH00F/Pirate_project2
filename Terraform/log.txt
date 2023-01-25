@@ -7850,3 +7850,1140 @@ X-Xss-Protection: 0
 2023-01-25T14:29:34.743+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:29:34 [DEBUG] [transport] transport: http2Server.HandleStreams failed to read frame: read tcp 127.0.0.1:10000->127.0.0.1:65271: use of closed network connection 
 2023-01-25T14:29:34.770+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=10300
 2023-01-25T14:29:34.770+0300 [DEBUG] provider: plugin exited
+2023-01-25T14:37:48.137+0300 [INFO]  Terraform version: 1.3.7
+2023-01-25T14:37:48.163+0300 [DEBUG] using github.com/hashicorp/go-tfe v1.9.0
+2023-01-25T14:37:48.163+0300 [DEBUG] using github.com/hashicorp/hcl/v2 v2.15.0
+2023-01-25T14:37:48.163+0300 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-01-25T14:37:48.163+0300 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-01-25T14:37:48.163+0300 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-01-25T14:37:48.163+0300 [INFO]  Go runtime version: go1.19.4
+2023-01-25T14:37:48.163+0300 [INFO]  CLI args: []string{"C:\\Program Files\\Terraform\\terraform.exe", "destroy"}
+2023-01-25T14:37:48.166+0300 [DEBUG] Attempting to open CLI config file: C:\Users\admin\AppData\Roaming\terraform.rc
+2023-01-25T14:37:48.166+0300 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-01-25T14:37:48.167+0300 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-01-25T14:37:48.167+0300 [DEBUG] ignoring non-existing provider search directory C:\Users\admin\AppData\Roaming\terraform.d\plugins
+2023-01-25T14:37:48.167+0300 [DEBUG] ignoring non-existing provider search directory C:\Users\admin\AppData\Roaming\HashiCorp\Terraform\plugins
+2023-01-25T14:37:48.167+0300 [INFO]  CLI command args: []string{"destroy"}
+2023-01-25T14:37:48.169+0300 [DEBUG] New state was assigned lineage "c03160ad-9ec8-1401-7744-71c93409fd7e"
+2023-01-25T14:37:48.345+0300 [DEBUG] checking for provisioner in "."
+2023-01-25T14:37:48.345+0300 [DEBUG] checking for provisioner in "C:\\Program Files\\Terraform"
+2023-01-25T14:37:48.346+0300 [INFO]  backend/local: starting Apply operation
+2023-01-25T14:37:48.353+0300 [DEBUG] created provider logger: level=debug
+2023-01-25T14:37:48.353+0300 [INFO]  provider: configuring client automatic mTLS
+2023-01-25T14:37:48.372+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe]
+2023-01-25T14:37:48.375+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=17048
+2023-01-25T14:37:48.375+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe
+2023-01-25T14:37:48.431+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: configuring server automatic mTLS: timestamp=2023-01-25T14:37:48.394+0300
+2023-01-25T14:37:48.456+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2023-01-25T14:37:48.456+0300
+2023-01-25T14:37:48.456+0300 [DEBUG] provider: using plugin: version=5
+2023-01-25T14:37:48.547+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-01-25T14:37:48.580+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=17048
+2023-01-25T14:37:48.580+0300 [DEBUG] provider: plugin exited
+2023-01-25T14:37:48.580+0300 [DEBUG] Building and walking validate graph
+2023-01-25T14:37:48.580+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.580+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.580+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.581+0300 [DEBUG] ReferenceTransformer: "google_compute_instance.app" references: []
+2023-01-25T14:37:48.581+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.firewall" references: []
+2023-01-25T14:37:48.581+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.webserverrule" references: []
+2023-01-25T14:37:48.581+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2023-01-25T14:37:48.581+0300 [DEBUG] Starting graph walk: walkValidate
+2023-01-25T14:37:48.582+0300 [DEBUG] created provider logger: level=debug
+2023-01-25T14:37:48.582+0300 [INFO]  provider: configuring client automatic mTLS
+2023-01-25T14:37:48.588+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe]
+2023-01-25T14:37:48.590+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=18160
+2023-01-25T14:37:48.590+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe
+2023-01-25T14:37:48.635+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: configuring server automatic mTLS: timestamp=2023-01-25T14:37:48.611+0300
+2023-01-25T14:37:48.663+0300 [DEBUG] provider: using plugin: version=5
+2023-01-25T14:37:48.663+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2023-01-25T14:37:48.663+0300
+2023-01-25T14:37:48.769+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-01-25T14:37:48.796+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=18160
+2023-01-25T14:37:48.796+0300 [DEBUG] provider: plugin exited
+2023-01-25T14:37:48.796+0300 [INFO]  backend/local: apply calling Plan
+2023-01-25T14:37:48.796+0300 [DEBUG] Building and walking plan graph for NormalMode
+2023-01-25T14:37:48.796+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.796+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.796+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:48.796+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.webserverrule (expand)" references: []
+2023-01-25T14:37:48.796+0300 [DEBUG] ReferenceTransformer: "google_compute_instance.app (expand)" references: []
+2023-01-25T14:37:48.796+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.firewall (expand)" references: []
+2023-01-25T14:37:48.796+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2023-01-25T14:37:48.797+0300 [DEBUG] Starting graph walk: walkPlan
+2023-01-25T14:37:48.797+0300 [DEBUG] created provider logger: level=debug
+2023-01-25T14:37:48.797+0300 [INFO]  provider: configuring client automatic mTLS
+2023-01-25T14:37:48.804+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe]
+2023-01-25T14:37:48.806+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=2628
+2023-01-25T14:37:48.806+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe
+2023-01-25T14:37:48.850+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: configuring server automatic mTLS: timestamp=2023-01-25T14:37:48.825+0300
+2023-01-25T14:37:48.875+0300 [DEBUG] provider: using plugin: version=5
+2023-01-25T14:37:48.875+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2023-01-25T14:37:48.875+0300
+2023-01-25T14:37:48.974+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/google\"]" changed the config value, but that value is unused
+2023-01-25T14:37:48.977+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:48 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:48.976+0300
+2023-01-25T14:37:48.977+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:48 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:48.976+0300
+2023-01-25T14:37:48.977+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:48 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:48.977+0300
+2023-01-25T14:37:48.977+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:48 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:48.977+0300
+2023-01-25T14:37:48.977+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:48 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:48.977+0300
+2023-01-25T14:37:49.809+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [INFO] Terraform is using this identity: prod-svc@pirate-project-374313.iam.gserviceaccount.com: timestamp=2023-01-25T14:37:49.808+0300
+2023-01-25T14:37:49.810+0300 [DEBUG] ReferenceTransformer: "google_compute_instance.app" references: []
+2023-01-25T14:37:49.810+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.webserverrule" references: []
+2023-01-25T14:37:49.811+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.firewall" references: []
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:49.819+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:49.819+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:49.819+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/firewalls/externalssh?alt=json HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+Content-Type: application/json
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:49.819+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:49.820+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:49 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/firewalls/webserver?alt=json HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+Content-Type: application/json
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:49.820+0300
+2023-01-25T14:37:50.397+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:37:50 GMT
+Etag: MpUnj20Y-_jAc-yfy8kVJD-Qgi4=/ilzyaeCoV-erTbNFscE2zdXvdN8=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#instance",
+ "id": "6393407475835251817",
+ "creationTimestamp": "2023-01-25T03:29:11.094-08:00",
+ "name": "test1",
+ "tags": {
+  "items": [
+   "externalssh",
+   "webserver"
+  ],
+  "fingerprint": "Mh9u1hBHiNA="
+ },
+ "machineType": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/machineTypes/e2-micro",
+ "status": "RUNNING",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "canIpForward": false,
+ "networkInterfaces": [
+  {
+   "kind": "compute#networkInterface",
+   "network": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/networks/default",
+   "subnetwork": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/regions/europe-west6/subnetworks/default",
+   "networkIP": "10.172.0.40",
+   "name": "nic0",
+   "accessConfigs": [
+    {
+     "kind": "compute#accessConfig",
+     "type": "ONE_TO_ONE_NAT",
+     "name": "external-nat",
+     "natIP": "34.65.222.27",
+     "networkTier": "PREMIUM"
+    }
+   ],
+   "fingerprint": "AkTqnafEJEM=",
+   "stackType": "IPV4_ONLY"
+  }
+ ],
+ "disks": [
+  {
+   "kind": "compute#attachedDisk",
+   "type": "PERSISTENT",
+   "mode": "READ_WRITE",
+   "source": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/disks/test1",
+   "deviceName": "persistent-disk-0",
+   "index": 0,
+   "boot": true,
+   "autoDelete": true,
+   "licenses": [
+    "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-11-bullseye"
+   ],
+   "interface": "SCSI",
+   "guestOsFeatures": [
+    {
+     "type": "UEFI_COMPATIBLE"
+    },
+    {
+     "type": "VIRTIO_SCSI_MULTIQUEUE"
+    },
+    {
+     "type": "GVNIC"
+    }
+   ],
+   "diskSizeGb": "20",
+   "architecture": "X86_64"
+  }
+ ],
+ "metadata": {
+  "kind": "compute#metadata",
+  "fingerprint": "yjbPg2wy9LE=",
+  "items": [
+   {
+    "key": "ssh-keys",
+    "value": "admin:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCup3iMko/U03ak10in2QF7gv3ln4xYljiuTWf/HOmniaSE6JRmc6OKLRL6Hkee9xWzv+xl3msoN4nCSpBQEeBMzNh8Sk/wF3hatkKZZ7GFJxE9Alayx5nmSEege+42zEpHV23MVAoXnwO5hJxSM4rcRF+1g1CAMoI/mCP0GKX9Ix/OtH9Jsbw9WJ+lltg1tsslXpZiXmFemDwALrnytbKrp72rPICWL1nmrlYFW0X+3e6NJtmFhAd/7BDaBWtPst2dPbEWVkVhJWZmigikiiqhWC7LWu26jsEXM+qrM1nH4YgyCv+rbVV2dW6zCU2kZJuhk3FAsTR/5w2AwTTSQl/bdwxrv5rqPkiYRNaiE2L52QRdDnvB3X5DNjRuX9+A3lOGxnRkCTSWVC/fG1VRMr4sB4MLQdGHoXHFnSeO+3jwauCufFbln/pPA7GRVdlGCRikPLS+n9xDvcZi1+SyQFXcEL3kTLoOCrX6Hm0TZC2lhNCNI02np+mxNzeto6BUytBOLr/vHP3w/Kqwx2d8yCAZ9oN3qFjKIDqLtcRkH27vSKasQO5yKDSeoCEyxxjN5IoNtZGL4Oqi3CdXGhi6HzXDUq3y21iBGwFrHeLE9bLktcmhe7vdtCg9LalzlnUTy/hI6/cV1eQPNFXOqQ0AuynCk6x+hE1lismWkw5+hPVMOw== admin@DESKTOP-I71IHJU\r\n"
+   }
+  ]
+ },
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "scheduling": {
+  "onHostMaintenance": "MIGRATE",
+  "automaticRestart": true,
+  "preemptible": false,
+  "provisioningModel": "STANDARD"
+ },
+ "cpuPlatform": "Intel Broadwell",
+ "labelFingerprint": "42WmSpB8rSM=",
+ "startRestricted": false,
+ "deletionProtection": false,
+ "shieldedInstanceConfig": {
+  "enableSecureBoot": false,
+  "enableVtpm": true,
+  "enableIntegrityMonitoring": true
+ },
+ "shieldedInstanceIntegrityPolicy": {
+  "updateAutoLearnPolicy": true
+ },
+ "fingerprint": "5A_NdZYW49s=",
+ "lastStartTimestamp": "2023-01-25T03:29:17.545-08:00"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:37:50.397+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:37:50.397+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:37:50.397+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:37:50.398+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:50.398+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:50.398+0300
+2023-01-25T14:37:50.398+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/disks/test1?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:50.398+0300
+2023-01-25T14:37:50.493+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:37:50 GMT
+Etag: N3g9VUnlodiq3mBYuc41P4iyJck=/gPiYBrFeO6zYA8IEAp7OMSJiPw4=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+  "kind": "compute#firewall",
+  "id": "6309424179250508236",
+  "creationTimestamp": "2023-01-25T03:14:43.647-08:00",
+  "name": "externalssh",
+  "description": "",
+  "network": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/networks/default",
+  "priority": 1000,
+  "sourceRanges": [
+"0.0.0.0/0"
+  ],
+  "targetTags": [
+"externalssh"
+  ],
+  "allowed": [
+    {
+      "IPProtocol": "tcp",
+      "ports": [
+"22"
+      ]
+    }
+  ],
+  "direction": "INGRESS",
+  "logConfig": {
+    "enable": false
+  },
+  "disabled": false,
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/externalssh"
+}
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:50.492+0300
+2023-01-25T14:37:50.493+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:37:50.492+0300
+2023-01-25T14:37:50.493+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:37:50.492+0300
+2023-01-25T14:37:50.497+0300 [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for google_compute_firewall.firewall, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .priority: planned value cty.NumberIntVal(1000) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .source_tags: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+2023-01-25T14:37:50.531+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:37:50 GMT
+Etag: 7xi0mWrdQX1rYIIEalutcMBnd28=/OsBT1rkqolOAqiS3v6F-sVWiLx4=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+  "kind": "compute#firewall",
+  "id": "1371434119363080652",
+  "creationTimestamp": "2023-01-25T03:14:43.727-08:00",
+  "name": "webserver",
+  "description": "",
+  "network": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/networks/default",
+  "priority": 1000,
+  "sourceRanges": [
+"0.0.0.0/0"
+  ],
+  "targetTags": [
+"webserver"
+  ],
+  "allowed": [
+    {
+      "IPProtocol": "tcp",
+      "ports": [
+        "80",
+"443"
+      ]
+    }
+  ],
+  "direction": "INGRESS",
+  "logConfig": {
+    "enable": false
+  },
+  "disabled": false,
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/webserver"
+}
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:50.531+0300
+2023-01-25T14:37:50.531+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:37:50.531+0300
+2023-01-25T14:37:50.531+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:37:50.531+0300
+2023-01-25T14:37:50.535+0300 [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for google_compute_firewall.webserverrule, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .priority: planned value cty.NumberIntVal(1000) for a non-computed attribute
+      - .target_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .description: planned value cty.StringVal("") for a non-computed attribute
+      - .source_tags: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .source_service_accounts: planned value cty.SetValEmpty(cty.String) for a non-computed attribute
+      - .disabled: planned value cty.False for a non-computed attribute
+2023-01-25T14:37:50.561+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:37:50 GMT
+Etag: OKuKtMdQFS6GEjRaWGeJigovV_s=/fya8XzXMNNyH9GBK2riF5gvwdro=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#disk",
+ "id": "2640152086913526889",
+ "creationTimestamp": "2023-01-25T03:29:11.103-08:00",
+ "name": "test1",
+ "sizeGb": "20",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "status": "READY",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/disks/test1",
+ "sourceImage": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/images/test-na-mugika",
+ "sourceImageId": "3084447530057401775",
+ "type": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/diskTypes/pd-standard",
+ "licenses": [
+  "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-11-bullseye"
+ ],
+ "guestOsFeatures": [
+  {
+   "type": "UEFI_COMPATIBLE"
+  },
+  {
+   "type": "VIRTIO_SCSI_MULTIQUEUE"
+  },
+  {
+   "type": "GVNIC"
+  }
+ ],
+ "lastAttachTimestamp": "2023-01-25T03:29:11.103-08:00",
+ "users": [
+  "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1"
+ ],
+ "labelFingerprint": "42WmSpB8rSM=",
+ "licenseCodes": [
+  "3853522013536123851"
+ ],
+ "physicalBlockSizeBytes": "4096",
+ "architecture": "X86_64"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:37:50.561+0300
+2023-01-25T14:37:50.561+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:37:50.561+0300
+2023-01-25T14:37:50.561+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:37:50.561+0300
+2023-01-25T14:37:50.562+0300 [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an unexpected new value for google_compute_instance.app during refresh.
+      - .labels: was null, but now cty.MapValEmpty(cty.String)
+      - .resource_policies: was null, but now cty.ListValEmpty(cty.String)
+2023-01-25T14:37:50.569+0300 [WARN]  Provider "registry.terraform.io/hashicorp/google" produced an invalid plan for google_compute_instance.app, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .can_ip_forward: planned value cty.False for a non-computed attribute
+      - .deletion_protection: planned value cty.False for a non-computed attribute
+      - .reservation_affinity: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .boot_disk[0].mode: planned value cty.StringVal("READ_WRITE") for a non-computed attribute
+      - .boot_disk[0].auto_delete: planned value cty.True for a non-computed attribute
+      - .confidential_instance_config: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .scheduling: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2023-01-25T14:37:50.570+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-01-25T14:37:50.570+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] [transport] transport: http2Server.HandleStreams failed to read frame: read tcp 127.0.0.1:10000->127.0.0.1:65376: use of closed network connection 
+2023-01-25T14:37:50.601+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=2628
+2023-01-25T14:37:50.601+0300 [DEBUG] provider: plugin exited
+2023-01-25T14:37:50.602+0300 [DEBUG] Building and walking plan graph for DestroyMode
+2023-01-25T14:37:50.603+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:50.603+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:50.603+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule" (*terraform.NodePlanDestroyableResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:50.603+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2023-01-25T14:37:50.603+0300 [DEBUG] Starting graph walk: walkPlanDestroy
+2023-01-25T14:37:50.603+0300 [DEBUG] created provider logger: level=debug
+2023-01-25T14:37:50.603+0300 [INFO]  provider: configuring client automatic mTLS
+2023-01-25T14:37:50.611+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe]
+2023-01-25T14:37:50.614+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=17632
+2023-01-25T14:37:50.614+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe
+2023-01-25T14:37:50.657+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: configuring server automatic mTLS: timestamp=2023-01-25T14:37:50.633+0300
+2023-01-25T14:37:50.682+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2023-01-25T14:37:50.682+0300
+2023-01-25T14:37:50.682+0300 [DEBUG] provider: using plugin: version=5
+2023-01-25T14:37:50.775+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/google\"]" changed the config value, but that value is unused
+2023-01-25T14:37:50.777+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:50.777+0300
+2023-01-25T14:37:50.777+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:50.777+0300
+2023-01-25T14:37:50.777+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:50.777+0300
+2023-01-25T14:37:50.777+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:50.777+0300
+2023-01-25T14:37:50.777+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:50 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:50.777+0300
+2023-01-25T14:37:51.322+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:51 [INFO] Terraform is using this identity: prod-svc@pirate-project-374313.iam.gserviceaccount.com: timestamp=2023-01-25T14:37:51.322+0300
+2023-01-25T14:37:51.326+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-01-25T14:37:51.360+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=17632
+2023-01-25T14:37:51.360+0300 [DEBUG] provider: plugin exited
+2023-01-25T14:37:51.361+0300 [DEBUG] building apply graph to check for errors
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:51.361+0300 [DEBUG] ReferenceTransformer: "google_compute_instance.app (expand)" references: []
+2023-01-25T14:37:51.361+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.firewall (expand)" references: []
+2023-01-25T14:37:51.361+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.webserverrule (expand)" references: []
+2023-01-25T14:37:51.362+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2023-01-25T14:37:51.362+0300 [DEBUG] pruneUnusedNodes: google_compute_instance.app (expand) is no longer needed, removing
+2023-01-25T14:37:51.362+0300 [DEBUG] pruneUnusedNodes: google_compute_firewall.firewall (expand) is no longer needed, removing
+2023-01-25T14:37:51.362+0300 [DEBUG] pruneUnusedNodes: google_compute_firewall.webserverrule (expand) is no longer needed, removing
+2023-01-25T14:37:51.384+0300 [DEBUG] command: asking for input: "\nDo you really want to destroy all resources?"
+2023-01-25T14:37:58.229+0300 [INFO]  backend/local: apply calling Apply
+2023-01-25T14:37:58.229+0300 [DEBUG] Building and walking apply graph for DestroyMode plan
+2023-01-25T14:37:58.229+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app (destroy)" (*terraform.NodeDestroyResourceInstance) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ProviderTransformer: "google_compute_instance.app (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.firewall (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ProviderTransformer: "google_compute_firewall.webserverrule (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/google"]
+2023-01-25T14:37:58.230+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.webserverrule (expand)" references: []
+2023-01-25T14:37:58.230+0300 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/google\"]" references: []
+2023-01-25T14:37:58.230+0300 [DEBUG] ReferenceTransformer: "google_compute_instance.app (expand)" references: []
+2023-01-25T14:37:58.230+0300 [DEBUG] ReferenceTransformer: "google_compute_firewall.firewall (expand)" references: []
+2023-01-25T14:37:58.230+0300 [DEBUG] pruneUnusedNodes: google_compute_instance.app (expand) is no longer needed, removing
+2023-01-25T14:37:58.230+0300 [DEBUG] pruneUnusedNodes: google_compute_firewall.firewall (expand) is no longer needed, removing
+2023-01-25T14:37:58.230+0300 [DEBUG] pruneUnusedNodes: google_compute_firewall.webserverrule (expand) is no longer needed, removing
+2023-01-25T14:37:58.230+0300 [DEBUG] Starting graph walk: walkDestroy
+2023-01-25T14:37:58.231+0300 [DEBUG] created provider logger: level=debug
+2023-01-25T14:37:58.231+0300 [INFO]  provider: configuring client automatic mTLS
+2023-01-25T14:37:58.239+0300 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe args=[.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe]
+2023-01-25T14:37:58.241+0300 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=16696
+2023-01-25T14:37:58.241+0300 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe
+2023-01-25T14:37:58.287+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: configuring server automatic mTLS: timestamp=2023-01-25T14:37:58.262+0300
+2023-01-25T14:37:58.311+0300 [DEBUG] provider: using plugin: version=5
+2023-01-25T14:37:58.312+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2023-01-25T14:37:58.311+0300
+2023-01-25T14:37:58.400+0300 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/google\"]" changed the config value, but that value is unused
+2023-01-25T14:37:58.402+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:58.402+0300
+2023-01-25T14:37:58.402+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:58.402+0300
+2023-01-25T14:37:58.402+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO] Authenticating using configured Google JSON 'credentials'...: timestamp=2023-01-25T14:37:58.402+0300
+2023-01-25T14:37:58.402+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO]   -- Scopes: [https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email]: timestamp=2023-01-25T14:37:58.402+0300
+2023-01-25T14:37:58.402+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:58.402+0300
+2023-01-25T14:37:58.992+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO] Terraform is using this identity: prod-svc@pirate-project-374313.iam.gserviceaccount.com: timestamp=2023-01-25T14:37:58.992+0300
+2023-01-25T14:37:58.995+0300 [INFO]  Starting apply for google_compute_firewall.webserverrule
+2023-01-25T14:37:58.995+0300 [DEBUG] google_compute_firewall.webserverrule: applying the planned Delete change
+2023-01-25T14:37:58.995+0300 [INFO]  Starting apply for google_compute_firewall.firewall
+2023-01-25T14:37:58.995+0300 [DEBUG] google_compute_firewall.firewall: applying the planned Delete change
+2023-01-25T14:37:58.996+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Deleting Firewall "projects/pirate-project-374313/global/firewalls/webserver": timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.996+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Deleting Firewall "projects/pirate-project-374313/global/firewalls/externalssh": timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.996+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.996+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Waiting for state to become: [success]: timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.996+0300 [INFO]  Starting apply for google_compute_instance.app
+2023-01-25T14:37:58.997+0300 [DEBUG] google_compute_instance.app: applying the planned Delete change
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:58.996+0300
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /compute/v1/projects/pirate-project-374313/global/firewalls/webserver?alt=json HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+Content-Type: application/json
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:58.997+0300
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:58.997+0300
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:58.997+0300
+2023-01-25T14:37:58.997+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /compute/v1/projects/pirate-project-374313/global/firewalls/externalssh?alt=json HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+Content-Type: application/json
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:58.997+0300
+2023-01-25T14:37:58.999+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO] Requesting instance deletion: test1: timestamp=2023-01-25T14:37:58.999+0300
+2023-01-25T14:37:58.999+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:37:58.999+0300
+2023-01-25T14:37:58.999+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:37:58.999+0300
+2023-01-25T14:37:58.999+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:37:58.999+0300
+2023-01-25T14:37:58.999+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:37:58 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+DELETE /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:37:58.999+0300
+2023-01-25T14:38:00.074+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:00 GMT
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+  "kind": "compute#operation",
+  "id": "1505415508197681783",
+  "name": "operation-1674646679787-5f31510791797-917475b6-ba7a7394",
+  "operationType": "delete",
+  "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/externalssh",
+  "targetId": "6309424179250508236",
+  "status": "RUNNING",
+  "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+  "progress": 0,
+  "insertTime": "2023-01-25T03:38:00.232-08:00",
+  "startTime": "2023-01-25T03:38:00.247-08:00",
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394"
+}
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.074+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.074+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.074+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:38:00.075+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Waiting for state to become: [DONE]: timestamp=2023-01-25T14:38:00.075+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:00.075+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:00.075+0300
+2023-01-25T14:38:00.075+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.075+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:00 GMT
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+  "kind": "compute#operation",
+  "id": "534402829402286711",
+  "name": "operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05",
+  "operationType": "delete",
+  "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/webserver",
+  "targetId": "1371434119363080652",
+  "status": "RUNNING",
+  "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+  "progress": 0,
+  "insertTime": "2023-01-25T03:38:00.250-08:00",
+  "startTime": "2023-01-25T03:38:00.266-08:00",
+  "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05"
+}
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Waiting for state to become: [DONE]: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.093+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.093+0300
+2023-01-25T14:38:00.383+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:00 GMT
+Etag: Ubmy7tJEzl9RoXwk_f0oJ0D2V5E=/6BXXBoqZgybTQEwV4yYWkthm5I4=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "1505415508197681783",
+ "name": "operation-1674646679787-5f31510791797-917475b6-ba7a7394",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/externalssh",
+ "targetId": "6309424179250508236",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.232-08:00",
+ "startTime": "2023-01-25T03:38:00.247-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.382+0300
+2023-01-25T14:38:00.383+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.383+0300
+2023-01-25T14:38:00.383+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.383+0300
+2023-01-25T14:38:00.383+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Got RUNNING while polling for operation operation-1674646679787-5f31510791797-917475b6-ba7a7394's status: timestamp=2023-01-25T14:38:00.383+0300
+2023-01-25T14:38:00.383+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:00.383+0300
+2023-01-25T14:38:00.386+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:00 GMT
+Etag: 9gFHFrevlKjStfzlvoot_SIFwmA=/oJCYkaoc9ISC9sNKcGfQt_sAEew=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "534402829402286711",
+ "name": "operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/webserver",
+ "targetId": "1371434119363080652",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.250-08:00",
+ "startTime": "2023-01-25T03:38:00.266-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.386+0300
+2023-01-25T14:38:00.386+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.386+0300
+2023-01-25T14:38:00.386+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.386+0300
+2023-01-25T14:38:00.386+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Got RUNNING while polling for operation operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05's status: timestamp=2023-01-25T14:38:00.386+0300
+2023-01-25T14:38:00.386+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:00.386+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:01 GMT
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [INFO] Instantiating GCE client for path https://compute.googleapis.com/compute/v1/: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Waiting for state to become: [DONE]: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.641+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.641+0300
+2023-01-25T14:38:00.811+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:01 GMT
+Etag: XqTMsja-akmm1KFstjHnsHHSiDs=/8SOXWxws2SUmdgvZeaK42hqFk-c=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:00.811+0300
+2023-01-25T14:38:00.811+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:00.811+0300
+2023-01-25T14:38:00.811+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:00.811+0300
+2023-01-25T14:38:00.811+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [DEBUG] Got RUNNING while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:00.811+0300
+2023-01-25T14:38:00.811+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:00 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:00.811+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.396+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.396+0300
+2023-01-25T14:38:10.690+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:11 GMT
+Etag: zQ0SvCIYjyqSYEwYyzZbAMwnUfY=/QcNXNl4VY9bC7nCFzHHRjrOiF3c=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "1505415508197681783",
+ "name": "operation-1674646679787-5f31510791797-917475b6-ba7a7394",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/externalssh",
+ "targetId": "6309424179250508236",
+ "status": "DONE",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 100,
+ "insertTime": "2023-01-25T03:38:00.232-08:00",
+ "startTime": "2023-01-25T03:38:00.247-08:00",
+ "endTime": "2023-01-25T03:38:04.021-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.690+0300
+2023-01-25T14:38:10.690+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:10.690+0300
+2023-01-25T14:38:10.690+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:10.690+0300
+2023-01-25T14:38:10.690+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Got DONE while polling for operation operation-1674646679787-5f31510791797-917475b6-ba7a7394's status: timestamp=2023-01-25T14:38:10.690+0300
+2023-01-25T14:38:10.690+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Finished deleting Firewall "projects/pirate-project-374313/global/firewalls/externalssh": map[string]interface {}{"id":"1505415508197681783", "insertTime":"2023-01-25T03:38:00.232-08:00", "kind":"compute#operation", "name":"operation-1674646679787-5f31510791797-917475b6-ba7a7394", "operationType":"delete", "progress":0, "selfLink":"https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679787-5f31510791797-917475b6-ba7a7394", "startTime":"2023-01-25T03:38:00.247-08:00", "status":"RUNNING", "targetId":"6309424179250508236", "targetLink":"https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/externalssh", "user":"prod-svc@pirate-project-374313.iam.gserviceaccount.com"}: timestamp=2023-01-25T14:38:10.690+0300
+2023-01-25T14:38:10.789+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:11 GMT
+Etag: u1YQdwHUsQ6q0Gw_vvOvdpswuWc=/DQ3_blGsC6oSmbZItFdG8KPadZk=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "534402829402286711",
+ "name": "operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/webserver",
+ "targetId": "1371434119363080652",
+ "status": "DONE",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 100,
+ "insertTime": "2023-01-25T03:38:00.250-08:00",
+ "startTime": "2023-01-25T03:38:00.266-08:00",
+ "endTime": "2023-01-25T03:38:04.600-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.788+0300
+2023-01-25T14:38:10.789+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:10.788+0300
+2023-01-25T14:38:10.789+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:10.788+0300
+2023-01-25T14:38:10.789+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Got DONE while polling for operation operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05's status: timestamp=2023-01-25T14:38:10.788+0300
+2023-01-25T14:38:10.789+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Finished deleting Firewall "projects/pirate-project-374313/global/firewalls/webserver": map[string]interface {}{"id":"534402829402286711", "insertTime":"2023-01-25T03:38:00.250-08:00", "kind":"compute#operation", "name":"operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05", "operationType":"delete", "progress":0, "selfLink":"https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/operations/operation-1674646679786-5f3151079150e-a4ba46c4-5ab3ea05", "startTime":"2023-01-25T03:38:00.266-08:00", "status":"RUNNING", "targetId":"1371434119363080652", "targetLink":"https://www.googleapis.com/compute/v1/projects/pirate-project-374313/global/firewalls/webserver", "user":"prod-svc@pirate-project-374313.iam.gserviceaccount.com"}: timestamp=2023-01-25T14:38:10.789+0300
+2023-01-25T14:38:10.816+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:10.816+0300
+2023-01-25T14:38:10.816+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:10.816+0300
+2023-01-25T14:38:10.816+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.816+0300
+2023-01-25T14:38:10.981+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:11 GMT
+Etag: 66O6ee9vBI7XZqfzKf05sVZ6R34=/0HLiBeDByYpucbB-tGjAHlkWgsM=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:10.981+0300
+2023-01-25T14:38:10.981+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:10.981+0300
+2023-01-25T14:38:10.981+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:10.981+0300
+2023-01-25T14:38:10.981+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [DEBUG] Got RUNNING while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:10.981+0300
+2023-01-25T14:38:10.981+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:10 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:10.981+0300
+2023-01-25T14:38:20.991+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:20 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:20.991+0300
+2023-01-25T14:38:20.991+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:20 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:20.991+0300
+2023-01-25T14:38:20.991+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:20 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:20.991+0300
+2023-01-25T14:38:21.156+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:21 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:21 GMT
+Etag: hJuwICIHBMg5By7RqPifw9c-ejg=/Wx-SlwTV9cAtOTp4BiUBmXDEvJs=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:21.156+0300
+2023-01-25T14:38:21.156+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:21 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:21.156+0300
+2023-01-25T14:38:21.156+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:21 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:21.156+0300
+2023-01-25T14:38:21.156+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:21 [DEBUG] Got RUNNING while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:21.156+0300
+2023-01-25T14:38:21.156+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:21 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:21.156+0300
+2023-01-25T14:38:31.157+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:31.157+0300
+2023-01-25T14:38:31.157+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:31.157+0300
+2023-01-25T14:38:31.157+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:31.157+0300
+2023-01-25T14:38:31.321+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:31 GMT
+Etag: OKuKtMdQFS6GEjRaWGeJigovV_s=/FUIWWaVpM39lye3zYsAumoLpgYM=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:31.321+0300
+2023-01-25T14:38:31.321+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:31.321+0300
+2023-01-25T14:38:31.321+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:31.321+0300
+2023-01-25T14:38:31.321+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [DEBUG] Got RUNNING while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:31.321+0300
+2023-01-25T14:38:31.321+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:31 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:31.321+0300
+2023-01-25T14:38:41.322+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:41.322+0300
+2023-01-25T14:38:41.322+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:41.322+0300
+2023-01-25T14:38:41.322+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:41.322+0300
+2023-01-25T14:38:41.459+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:41 GMT
+Etag: q0d93pTC_hxMvSr7oaq79-uof0E=/YwCZ--aHafUZ9nVSuh7ViJ0qlp0=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "RUNNING",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 0,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:41.458+0300
+2023-01-25T14:38:41.459+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:41.458+0300
+2023-01-25T14:38:41.459+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:41.458+0300
+2023-01-25T14:38:41.459+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [DEBUG] Got RUNNING while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:41.458+0300
+2023-01-25T14:38:41.459+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:41 [TRACE] Waiting 10s before next try: timestamp=2023-01-25T14:38:41.458+0300
+2023-01-25T14:38:51.468+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Retry Transport: starting RoundTrip retry loop: timestamp=2023-01-25T14:38:51.468+0300
+2023-01-25T14:38:51.468+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Retry Transport: request attempt 0: timestamp=2023-01-25T14:38:51.468+0300
+2023-01-25T14:38:51.468+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Google API Request Details:
+---[ REQUEST ]---------------------------------------
+GET /compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403?alt=json&prettyPrint=false HTTP/1.1
+Host: compute.googleapis.com
+User-Agent: google-api-go-client/0.5 Terraform/1.3.7 (+https://www.terraform.io) Terraform-Plugin-SDK/2.10.1 terraform-provider-google/4.49.0
+X-Goog-Api-Client: gl-go/1.18.1 gdcl/0.105.0
+Accept-Encoding: gzip
+
+
+-----------------------------------------------------: timestamp=2023-01-25T14:38:51.468+0300
+2023-01-25T14:38:51.645+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Google API Response Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Cache-Control: private
+Content-Type: application/json; charset=UTF-8
+Date: Wed, 25 Jan 2023 11:38:52 GMT
+Etag: 3sI9aaUJzFnHswoTJuy0u_KmtU4=/fpSOGw760fb7hrLVld9zYxvW8wU=
+Server: ESF
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+ "kind": "compute#operation",
+ "id": "124867716224690807",
+ "name": "operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403",
+ "zone": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a",
+ "operationType": "delete",
+ "targetLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/instances/test1",
+ "targetId": "6393407475835251817",
+ "status": "DONE",
+ "user": "prod-svc@pirate-project-374313.iam.gserviceaccount.com",
+ "progress": 100,
+ "insertTime": "2023-01-25T03:38:00.893-08:00",
+ "startTime": "2023-01-25T03:38:00.923-08:00",
+ "endTime": "2023-01-25T03:38:45.759-08:00",
+ "selfLink": "https://www.googleapis.com/compute/v1/projects/pirate-project-374313/zones/europe-west6-a/operations/operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403"
+}
+-----------------------------------------------------: timestamp=2023-01-25T14:38:51.645+0300
+2023-01-25T14:38:51.645+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Retry Transport: Stopping retries, last request was successful: timestamp=2023-01-25T14:38:51.645+0300
+2023-01-25T14:38:51.645+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Retry Transport: Returning after 1 attempts: timestamp=2023-01-25T14:38:51.645+0300
+2023-01-25T14:38:51.645+0300 [INFO]  provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] Got DONE while polling for operation operation-1674646679746-5f3151078780d-22c5eaaa-cee4b403's status: timestamp=2023-01-25T14:38:51.645+0300
+2023-01-25T14:38:51.650+0300 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2023-01-25T14:38:51.650+0300 [DEBUG] provider.terraform-provider-google_v4.49.0_x5.exe: 2023/01/25 14:38:51 [DEBUG] [transport] transport: http2Server.HandleStreams failed to read frame: read tcp 127.0.0.1:10000->127.0.0.1:65385: use of closed network connection 
+2023-01-25T14:38:51.685+0300 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/google/4.49.0/windows_amd64/terraform-provider-google_v4.49.0_x5.exe pid=16696
+2023-01-25T14:38:51.685+0300 [DEBUG] provider: plugin exited
