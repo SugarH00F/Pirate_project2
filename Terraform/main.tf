@@ -38,7 +38,8 @@ resource "google_compute_instance""app"{
     connection {
         type        = "ssh"
         user        = "admin"
-        host        = "google_compute_instance.this.network_interface.0.access_config.0.nat_ip" 
+       # timeout     = "10s"
+        host        = "${google_compute_instance.app.network_interface.0.access_config.0.nat_ip}"
         agent       = false
         private_key = "${file("~/.ssh/id_rsa")}"
   }
